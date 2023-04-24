@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-[#4a4c4d] text-[#fad2e3] tracking-wide
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-semibold font-serif
+    }
+
+    h1 {
+        @apply text-3xl sm:text-4xl md:text-5xl
+    }
+
+    h2, h3 {
+        @apply text-2xl sm:text-3xl
+    }
+
+    h4, h5, h6 {
+        @apply font-sans font-semibold
+    }
+
+    li {
+        @apply cursor-pointer
+    }
+
+    .nav-li {
+        @apply ml-10 text-lg border-b-2 border-[#fbcfe8]
+    }
+
+    .skill-bar{
+        @apply border w-[100%] rounded-md mt-2 bg-[#fff]
+    }
+
+    .skill-per {
+        @apply relative block h-[50%] w-[95%] rounded-md bg-bree-pink ease-in-out duration-700
+    }
+
+    .skill-per > .tooltip {
+        @apply mx-4 text-bree-grey font-semibold
+    }
+
+    .section-title {
+       @apply absolute top-24 tracking-[10px]
+    }
+}
